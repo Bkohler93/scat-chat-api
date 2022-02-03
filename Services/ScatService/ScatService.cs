@@ -1,21 +1,8 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using scat_chat_api.Models;
-using scat_chat_api.Dtos.Scat;
-using Microsoft.AspNetCore.Mvc;
-using AutoMapper;
-using scat_chat_api.Data;
-using Microsoft.EntityFrameworkCore;
-
 namespace scat_chat_api.Services.ScatService
 {
 	public class ScatService : IScatService
 	{
-
 		private readonly DataContext _context;
-
 		private readonly IMapper _mapper;
 		public ScatService(IMapper mapper, DataContext context)
 		{

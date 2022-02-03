@@ -1,15 +1,6 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using scat_chat_api.Models;
-using scat_chat_api.Services.ScatService;
-using scat_chat_api.Dtos.Scat;
-using AutoMapper;
-
 namespace scat_chat_api.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("[controller]")]
     public class ScatController : ControllerBase

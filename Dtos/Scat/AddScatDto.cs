@@ -1,8 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
 namespace scat_chat_api.Dtos.Scat
 {
     public class AddScatDto

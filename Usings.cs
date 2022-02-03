@@ -1,0 +1,17 @@
+global using Microsoft.AspNetCore.Mvc;
+global using scat_chat_api.Data;
+global using scat_chat_api.Dtos.User;
+global using scat_chat_api.Models;
+global using System;
+global using System.Collections.Generic;
+global using System.Linq;
+global using System.Threading.Tasks;
+global using scat_chat_api.Services.ScatService;
+global using scat_chat_api.Dtos.Scat;
+global using AutoMapper;
+global using System.Security.Claims;
+global using Microsoft.EntityFrameworkCore;
+global using Microsoft.IdentityModel.Tokens;
+global using System.IdentityModel.Tokens.Jwt;
+global using Microsoft.AspNetCore.Authentication.JwtBearer;
+global using Microsoft.AspNetCore.Authorization;
