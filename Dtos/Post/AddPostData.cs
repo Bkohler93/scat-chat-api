@@ -1,9 +1,8 @@
-namespace scat_chat_api.Dtos.Scat
+namespace scat_chat_api.Dtos.Post
 {
-    public class UpdateScatDto
+    public class AddPostDto
     {
-        public int? Id { get; set; }
-         public string? Text { get; set; }
+        public string? Text { get; set; }
         public string? Author {get; set;}
         public string? Color { get; set; }
         public int UserId { get; set; } = 1;

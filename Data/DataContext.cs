@@ -7,7 +7,7 @@ namespace scat_chat_api.Data
             
         }
 
-        public DbSet<Scat> Scats {get; set;}
+        public DbSet<Post> Posts {get; set;}
         public DbSet<User> Users {get; set;}
     }
 }

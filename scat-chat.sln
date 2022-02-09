@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "scat-chat-api", "scat-chat-api.csproj", "{3DA74F42-89D5-4065-89E6-87C51B7899DF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3DA74F42-89D5-4065-89E6-87C51B7899DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DA74F42-89D5-4065-89E6-87C51B7899DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DA74F42-89D5-4065-89E6-87C51B7899DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DA74F42-89D5-4065-89E6-87C51B7899DF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

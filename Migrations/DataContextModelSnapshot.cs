@@ -22,7 +22,7 @@ namespace scat_chat_api.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("scat_chat_api.Models.Scat", b =>
+            modelBuilder.Entity("scat_chat_api.Models.Post", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -38,9 +38,6 @@ namespace scat_chat_api.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<int>("NumLikes")
-                        .HasColumnType("integer");
-
                     b.Property<string>("Text")
                         .IsRequired()
                         .HasColumnType("text");
@@ -55,7 +52,7 @@ namespace scat_chat_api.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Scats");
+                    b.ToTable("Posts");
                 });
 
             modelBuilder.Entity("scat_chat_api.Models.User", b =>
@@ -83,10 +80,10 @@ namespace scat_chat_api.Migrations
                     b.ToTable("Users");
                 });
 
-            modelBuilder.Entity("scat_chat_api.Models.Scat", b =>
+            modelBuilder.Entity("scat_chat_api.Models.Post", b =>
                 {
                     b.HasOne("scat_chat_api.Models.User", "User")
-                        .WithMany("Scats")
+                        .WithMany("Posts")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -96,7 +93,7 @@ namespace scat_chat_api.Migrations
 
             modelBuilder.Entity("scat_chat_api.Models.User", b =>
                 {
-                    b.Navigation("Scats");
+                    b.Navigation("Posts");
                 });
 #pragma warning restore 612, 618
         }
